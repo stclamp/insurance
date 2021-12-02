@@ -1,0 +1,44 @@
+.promo {
+  padding-top: 30px;
+  padding-bottom: 108px;
+  &__wrapper {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px rgba(20, 29, 61, 0.15),
+      -2px -2px 5px rgba(20, 29, 61, 0.15);
+    border-radius: 30px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 55px 65px 98px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #0d1c41;
+    span {
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 200;
+    line-height: 16px;
+    color: #939ca6;
+    width: 368px;
+    margin-top: 24px;
+    font-weight: 200;
+  }
+  &__btn {
+    margin-top: 92px;
+    transition: 0.4s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

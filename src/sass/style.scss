@@ -1,0 +1,26 @@
+@import "base/mixins";
+@import "base/variables";
+@import "libs/reset";
+@import "libs/fonts";
+
+* {
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+body {
+  font-family: "SF Pro Display";
+}
+
+.container {
+  width: 1165px;
+  margin: 0 auto;
+}
+
+@import "blocks/btns";
+@import "blocks/titles";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/about";
