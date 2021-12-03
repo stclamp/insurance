@@ -7,6 +7,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__burger {
+      background: none;
+      border: none;
+      display: none;
+      padding: 10px;
+      span {
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__burger.opened {
+      span {
+        position: relative;
+        &:first-child{
+          transform: rotate(45deg) translate(41%);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:last-child{
+          transform: rotate(-45deg) translate(41%);
+        }
+      }
+    }
   }
 
   &__menu {
