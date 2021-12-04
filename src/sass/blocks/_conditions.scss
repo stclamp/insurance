@@ -1,0 +1,42 @@
+.conditions {
+  padding-top: 109px;
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &:nth-child(3) {
+      img {
+        order: 2;
+      }
+      .conditions__block--title {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        span {
+          padding: 14px;
+          background: #ffffff;
+          border: 1.5px solid #ebebeb;
+          margin-right: 27px;
+          border-radius: 16px;
+        }
+        img {
+          width: 47px;
+          height: 47px;
+        }
+      }
+    }
+    &:last-child {
+      margin-top: -50px;
+    }
+  }
+  &__block--title {
+    font-size: 64px;
+  }
+  &__block--subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 200;
+    width: 366px;
+    margin-top: 15px;
+  }
+}
