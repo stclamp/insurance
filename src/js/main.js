@@ -17,5 +17,21 @@ window.addEventListener('DOMContentLoaded', () => {
             burgerBtn.classList.remove('opened');
             burgerContent.classList.remove('active');
         }
+    });
+
+    //accordion
+
+    const accordionTrigger = document.querySelectorAll('.faq__accordion-title');
+    const accordionBlock = document.querySelectorAll('.faq__accordion-block');
+    const accordionContent = document.querySelectorAll('.faq__accordion-content');
+
+    accordionTrigger.forEach((item, i) => {
+        item.addEventListener('click', () => {
+            accordionTrigger[i].classList.toggle('active');
+            accordionBlock[i].classList.toggle('active');
+            accordionContent[i].classList.toggle('active');
+        })
     })
+
 })
+

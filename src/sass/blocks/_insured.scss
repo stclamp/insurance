@@ -1,0 +1,24 @@
+.insured {
+  position: relative;
+  margin-bottom: 150px;
+
+  //   &__block {
+  //     background-image: url("../img/Union.svg");
+  //     min-width: 765px;
+  //     height: 460px;
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
+  //     transition: 0.5s ease;
+  //   }
+  //   &__block.call {
+  //     background-image: url("../img/Union0.svg");
+  //     width: 266px;
+  //     height: 512px;
+  //   }
+  &__union0 {
+    display: none;
+  }
+  &__union0.active {
+    display: block;
+  }
+}
