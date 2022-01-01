@@ -1,0 +1,92 @@
+.footer {
+    margin-top: 100px;
+    background-color: #4A607A;
+    padding-top: 84px;
+    padding-bottom: 39px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 189px 184px 266px 277px;
+        justify-content: space-between;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__link {
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 200;
+        position: relative;
+        padding-bottom: 2px;
+        transition: 0.5s ease;
+        &:hover {
+            color: #DDD0A4;
+            padding-bottom: 5px;
+            &::after {
+                content: "";
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+                width: 120%;
+                height: 1px;
+                background-color: #DDD0A4;
+            }
+        }
+    }
+    &__adress {
+        color: #9C9C9C;
+    }
+    &__schedule {
+        color: #9c9c9c;
+        margin-top: 42px;
+    }
+    &__btn {
+        margin-top: 35px;
+        color: #0D1C41;
+    } 
+    &__post {
+        color: #9c9c9c;
+        font-weight: 200;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__tel {
+        margin-top: 42px;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+    &__email {
+        color: #fff;
+        margin-top: 33px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 200;
+        a {
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+    &__social {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        margin-top: 45px;
+    }
+    &__line {
+        margin-top: 63px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #9C9C9C;
+    }
+    &__copyright {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 200;
+        color: #9c9c9c;
+    }
+}

@@ -58,15 +58,14 @@
     font-size: 16px;
     font-weight: 200;
     line-height: 19px;
-    opacity: 0;
+    display: none;
     position: relative;
-    top: -80px;
     text-align: center;
     transition: 0.3s ease;
   }
   &__accordion-content.active {
     padding: 28px 80px 29px 99px;
-    opacity: 1;
-    top: 0;
+
+    display: block;
   }
 }
